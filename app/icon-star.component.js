@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,35 +10,28 @@ System.register(['angular2/core', './courses.component', './authors.component'],
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1;
-    var AppComponent;
+    var core_1;
+    var IconStarComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (courses_component_1_1) {
-                courses_component_1 = courses_component_1_1;
-            },
-            function (authors_component_1_1) {
-                authors_component_1 = authors_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            IconStarComponent = (function () {
+                function IconStarComponent() {
                 }
-                AppComponent = __decorate([
+                IconStarComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        template: "\n    \t<h1>Hello Angular</h1>\n    \t<icon-star></icon-star>\n    \t<courses></courses>\n    \t<authors></authors>\n    ",
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent]
+                        selector: 'icon-star',
+                        template: "\n\t\t<h2>Hello</h2>\n\t",
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], IconStarComponent);
+                return IconStarComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("IconStarComponent", IconStarComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=icon-star.component.js.map
